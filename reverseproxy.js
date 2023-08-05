@@ -7,7 +7,7 @@
 addProvider('ReverseProxy', async (arg) => {
     const apikey = await getArg("ReverseProxy::_API");
     let ReverseProxy = await getArg("ReverseProxy::__ReverseProxy");
-    const modelname = await getArg("ReverseProxy::__Model");
+    const modelname = await getArg("ReverseProxy::__model");
 
     if (ReverseProxy.endsWith('v1')) {
         ReverseProxy += '/chat/completions';
